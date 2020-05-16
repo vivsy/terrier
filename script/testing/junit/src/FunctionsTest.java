@@ -149,6 +149,11 @@ public class FunctionsTest extends TestUtility {
         checkDoubleFunc("tan", "double_val", false, -0.230318);
         checkDoubleFunc("tan", "double_val", true, null);
     }
+    @Test
+    public void testLog2() throws SQLException {
+        checkDoubleFunc("log2", "double_val", false, 3.625270);
+        checkDoubleFunc("log2", "double_val", true, null);
+    }
     
     /**
      * String Functions
